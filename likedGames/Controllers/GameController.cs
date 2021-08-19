@@ -74,13 +74,13 @@ namespace likedGames.Controllers
                 return RedirectToAction("Index", "Home");
             }
             
-            List<Game> allWeddings = db.Games
+            List<Game> allGames = db.Games
 
                 .Include(game => game.CreatedBy) // hover over the param to see it's data type
                 
                 .Include(game => game.likedGames)
                 .ToList();
-            return View("Dashboard", allWeddings);
+            return View("Dashboard", allGames);
         }
 
         [HttpGet("/games/{gameId}")]

@@ -112,7 +112,7 @@ namespace likedGames.Controllers
 
             HttpContext.Session.SetInt32("UserId", dbUser.UserId);
             HttpContext.Session.SetString("FirstName", dbUser.FirstName);
-            return RedirectToAction("Dashboard", "Games");
+            return RedirectToAction("Dashboard", "Game");
         }
 
 

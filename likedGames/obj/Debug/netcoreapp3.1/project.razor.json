@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Home/LogPage.cshtml",
+      "TargetPath": "Views\\Home\\LogPage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -14414,6 +14419,11 @@
     {
       "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Games/Dashboard.cshtml",
+      "TargetPath": "Views\\Games\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {

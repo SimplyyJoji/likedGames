@@ -52,7 +52,7 @@ namespace likedGames.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Gamess");
+                    b.ToTable("Games");
                 });
 
             modelBuilder.Entity("likedGames.Models.LikedGame", b =>

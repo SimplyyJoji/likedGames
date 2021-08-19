@@ -9,7 +9,7 @@ using likedGames.Models;
 namespace likedGames.Migrations
 {
     [DbContext(typeof(likedGameContext))]
-    [Migration("20210819191708_First")]
+    [Migration("20210819192020_First")]
     partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,7 +54,7 @@ namespace likedGames.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Gamess");
+                    b.ToTable("Games");
                 });
 
             modelBuilder.Entity("likedGames.Models.LikedGame", b =>

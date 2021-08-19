@@ -27,7 +27,7 @@ namespace likedGames.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Gamess",
+                name: "Games",
                 columns: table => new
                 {
                     GameId = table.Column<int>(nullable: false)
@@ -42,9 +42,9 @@ namespace likedGames.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Gamess", x => x.GameId);
+                    table.PrimaryKey("PK_Games", x => x.GameId);
                     table.ForeignKey(
-                        name: "FK_Gamess_Users_UserId",
+                        name: "FK_Games_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "UserId",
@@ -66,9 +66,9 @@ namespace likedGames.Migrations
                 {
                     table.PrimaryKey("PK_LikedGames", x => x.LikedId);
                     table.ForeignKey(
-                        name: "FK_LikedGames_Gamess_GameId",
+                        name: "FK_LikedGames_Games_GameId",
                         column: x => x.GameId,
-                        principalTable: "Gamess",
+                        principalTable: "Games",
                         principalColumn: "GameId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -80,8 +80,8 @@ namespace likedGames.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Gamess_UserId",
-                table: "Gamess",
+                name: "IX_Games_UserId",
+                table: "Games",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
@@ -101,7 +101,7 @@ namespace likedGames.Migrations
                 name: "LikedGames");
 
             migrationBuilder.DropTable(
-                name: "Gamess");
+                name: "Games");
 
             migrationBuilder.DropTable(
                 name: "Users");

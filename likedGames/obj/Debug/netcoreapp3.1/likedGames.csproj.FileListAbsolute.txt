@@ -59,3 +59,5 @@
 /Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/likedGames.genruntimeconfig.cache
 /Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/Razor/Views/Games/Dashboard.cshtml.g.cs
 /Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/Razor/Views/Home/LogPage.cshtml.g.cs
+/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/Razor/Views/Games/New.cshtml.g.cs
+/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/Razor/Views/Games/Details.cshtml.g.cs

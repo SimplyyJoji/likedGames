@@ -61,3 +61,4 @@
 /Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/Razor/Views/Game/Dashboard.cshtml.g.cs
 /Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/Razor/Views/Game/Details.cshtml.g.cs
 /Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/Razor/Views/Game/New.cshtml.g.cs
+/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/obj/Debug/netcoreapp3.1/Razor/Views/Game/Edit.cshtml.g.cs

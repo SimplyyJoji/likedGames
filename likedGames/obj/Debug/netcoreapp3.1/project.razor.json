@@ -14432,6 +14432,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Game/Edit.cshtml",
+      "TargetPath": "Views\\Game\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

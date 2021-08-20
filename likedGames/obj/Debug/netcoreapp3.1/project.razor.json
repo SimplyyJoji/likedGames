@@ -14412,8 +14412,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Games/Details.cshtml",
-      "TargetPath": "Views\\Games\\Details.cshtml",
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Game/Details.cshtml",
+      "TargetPath": "Views\\Game\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14427,8 +14427,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Games/Dashboard.cshtml",
-      "TargetPath": "Views\\Games\\Dashboard.cshtml",
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Game/Dashboard.cshtml",
+      "TargetPath": "Views\\Game\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14442,13 +14442,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Game/New.cshtml",
+      "TargetPath": "Views\\Game\\New.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/Games/New.cshtml",
-      "TargetPath": "Views\\Games\\New.cshtml",
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ORM/likedGames/likedGames/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {

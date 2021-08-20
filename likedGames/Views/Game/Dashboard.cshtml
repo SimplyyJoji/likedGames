@@ -1,3 +1,51 @@
-<h1>Welcome to Game Dash </h1>
+@model List<Game>
 
-<a asp-controller="Games" asp-action="New"> Add Game </a>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Welcome to the Game Dashboard</h1>
+      <a asp-controller="Games" asp-action="New"> Add Game </a>
+      <table style="width:100%">
+        <tr>
+          <th>Game Title</th>
+          <th>Date</th>
+          <th>Address</th>
+          <th>RSVP</th>
+          <th>Count</th>
+        </tr>
+        
+        @foreach (Game game in Model)
+        {
+          bool alreadyLiked = game.likedGames.Any(like => Context.Session.GetInt32("UserId") == like.UserId);
+        <tr>
+          <td> <a asp-controller="Game" asp-action="Details" asp-route-gameId="@game.GameId">@game.Title </a> </td>
+          <td> @game.Description</td>
+          <td> @game.Rating</td>
+          <td>
+          <form asp-controller="Game" asp-action="Like" asp-route-gameId="@game.GameId" class="float-start">
+          @if (alreadyLiked)
+          {
+            @* Thumbs up icon. *@
+            <button class="btn btn-outline-danger m-3">Un-Like</button>
+          }
+          else
+          {
+            <button class="btn btn-outline-success m-3">Like</button> 
+          }
+      </form>
+      </td>
+      <td><span>(@game.likedGames.Count)</span></td>
+        </tr>
+        }
+</table>
+    </div>
+  </div>
+</div>
+
+
+
+

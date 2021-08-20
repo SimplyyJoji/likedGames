@@ -29,7 +29,7 @@ namespace likedGames.Controllers
                 return uid != null;
             }
         }
-
+        //CREATE
         [HttpGet("/games/new")]
         public IActionResult New()
         {
@@ -66,7 +66,7 @@ namespace likedGames.Controllers
 
             return RedirectToAction("Dashboard");
         }
-
+        //READ
         [HttpGet("/Dashboard")]
         public IActionResult Dashboard()
         {
@@ -82,7 +82,7 @@ namespace likedGames.Controllers
                 .ToList();
             return View("Dashboard", allGames);
         }
-
+        //READ
         [HttpGet("/games/{gameId}")]
         public IActionResult Details(int gameId)
         {
@@ -106,6 +106,75 @@ namespace likedGames.Controllers
             }
 
             return View("Details", game);  
+        }
+
+        //DELETE
+        [HttpPost("/games/{gameId}/delete")]
+        public IActionResult Delete(int gameId)
+        {
+            Game game = db.Games.FirstOrDefault(p => p.GameId == gameId);
+
+            if (game == null)
+            {
+                return RedirectToAction("Dashboard");
+            }
+
+            db.Games.Remove(game);
+            db.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
+
+
+        //UPDATE
+        [HttpGet("/games/{gameId}/edit")]
+        public IActionResult Edit(int gameId)
+        {
+            Game game = db.Games.FirstOrDefault(p => p.GameId == gameId);
+
+            // The edit button will be hidden if you are not the author,
+            // but the user could still type the URL in manually, so
+            // prevent them from editing if they are not the author.
+            if (game == null || game.UserId != uid)
+            {
+                return RedirectToAction("Dashboard");
+            }
+
+            return View("Edit", game);
+        }
+
+        [HttpPost("/games/{gameId}/update")]
+        public IActionResult Update(int gameId, Game editedGame)
+        {
+            if (ModelState.IsValid == false)
+            {
+                editedGame.GameId = gameId;
+                // Send back to the page with the current form edited data to
+                // display errors.
+                return View("Edit", editedGame);
+            }
+
+            Game dbGame = db.Games.FirstOrDefault(p => p.GameId == gameId);
+
+            if (dbGame == null)
+            {
+                return RedirectToAction("Dashboard");
+            }
+
+            dbGame.Title = editedGame.Title;
+            dbGame.Description = editedGame.Description;
+            dbGame.Rating = editedGame.Rating;
+            dbGame.Src = editedGame.Src;
+            dbGame.UpdatedAt = DateTime.Now;
+
+            db.Games.Update(dbGame);
+            db.SaveChanges();
+
+            /* 
+            When redirecting to action that has params, you need to pass in a
+            dict with keys that match param names and the value of the keys are
+            the values for the params.
+            */
+            return RedirectToAction("Details", new { gameId = gameId });
         }
 
 
